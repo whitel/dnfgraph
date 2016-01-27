@@ -104,7 +104,7 @@ print("<li>Red = packages where the dependency has to be removed</li></ul>")
 print("<table>")
 print("<tr><th>Size</th><th>Saved</th><th>Reqs</th><th>Name</th></tr>")
 for n,s,l,r in sorted(sizes, key=lambda x: x[1], reverse=True):
-    print("<tr><td style=\"text-align:right\">%d</td><td style=\"text-align:right\">%d</td><td style=\"text-align:right\">%d</td><td>%s <a href=\"%s\">SVG</a> <a href=\"%s\">DOT</a></td></tr>" % (s/1024, l, r, n, "Tree-" + n + ".svg", "Tree-" + n + ".dot"))
+    print("<tr><td style=\"text-align:right\">%d</td><td style=\"text-align:right\">%d</td><td style=\"text-align:right\">%d</td><td>%s <a href=\"%s\" target="_blank">SVG</a> <a href=\"%s\">DOT</a></td></tr>" % (s/1024, l, r, n, "Tree-" + n + ".svg", "Tree-" + n + ".dot"))
 print("</table>")
 print("""
   </body>
